@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size:20px;
+
+  background-color: hsl(257, 40%, 49%);
+  background-image: url("images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.container {
+  max-width: 1350px;
+  margin: 0 auto;
+
+}
+
+.main-content {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.content-left {
+  width: 50%;
+}
+
+.content-left img {
+   width: 100%;
+ }
+
+.content-right {
+  max-width: 560px;
+}
+
+.content-right h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 33px;
+}
+
+.content-right p {
+  line-height: 1.5;
+  word-spacing: 3px;
+}
+
+.register {
+  color: hsl(257, 40%, 49%);
+  background-color: white;
+  padding: 15px 60px;
+  border-radius: 30px;
+  display: inline-block;
+  margin-top: 40px;
+  text-decoration: none;
+  border: 2px solid hsl(257, 40%, 49%);
+  -webkit-box-shadow: 3px 7px 11px -2px rgba(84,50,84,0.74);
+  -moz-box-shadow: 3px 7px 11px -2px rgba(84,50,84,0.74);
+  box-shadow: 3px 7px 11px -2px rgba(84,50,84,0.74);
+}
+
+.register:hover {
+  color: white;
+  background-color: hsl(257, 40%, 49%);
+  border: 2px solid white;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 130px;
+
+
+}
+.fab {
+  margin-left: 15px;
+  text-align: center;
+  padding-top: 8px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.fab:hover {
+  color: hsl(257, 40%, 49%);
+  background-color: white;
+  transition: background-color 0.2s, color 0.2s;
+
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width:1200px) {
+  body {
+    padding: 5% 14%;
+    background-image: url("images/bg-mobile.svg");
+    background-size: contain;
+  }
+
+  .logo img {
+    width: 50%;
+  }
+
+  .main-content {
+    flex-direction: column;
+    margin-top: 70px;
+  }
+
+  .container {
+    max-width: 500px;
+  }
+
+  .content-left {
+    width: 100%;
+    margin-bottom: 60px;
+
+  }
+
+  .content-left img {
+    width: 100%;
+  }
+  .content-right {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .content-right h1 {
+    font-size: 2rem;
+    width: 90%;
+    align-self: center;
+  }
+
+  .register {
+    width: 80%;
+    align-self: center;
+   }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+}
